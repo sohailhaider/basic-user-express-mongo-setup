@@ -3,6 +3,11 @@ const config = require('./config.json');
 
 module.exports = () => {
     mongoose.connect(config.connectionString, {
+        "auth": {
+          "authSource": "admin"
+        },
+        "user": config.username,
+        "pass": config.password,
         useCreateIndex: true,
         useNewUrlParser: true,
         poolSize: 5,

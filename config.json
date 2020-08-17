@@ -1,4 +1,6 @@
 {
     "connectionString": "mongodb://localhost:27017/test",
-    "port": 4000
+    "username": "username",
+    "password": "password",
+    "port": 3310
 }
